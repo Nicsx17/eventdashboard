@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <main class="main-container">
+        <div class="main-cards">
+          <div class="card">
+            <div class="card-inner">
+              <p>CLIENTS</p>
+              <div class="icon icon-shape background-blue text-primary">
+                <i class="fa-solid fa-users" style="color: #ffffff;"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p>VENUES</p>
+              <div class="icon icon-shape background-green text-primary">
+                <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p>EVENTS</p>
+              <div class="icon icon-shape background-orange text-primary">
+                <i class="fa-sharp fa-regular fa-calendar-days" style="color: #ffffff;"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p>EARN</p>
+              <div class="icon icon-shape background-red text-primary">
+                <i class="fa-solid fa-dollar-sign" style="color: #ffffff;"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="charts">
+          <div class="charts-card">
+            <p class="chart-title">CLIENTS</p>
+            <canvas id="bargraph"></canvas>
+          </div>
+
+          <div class="charts-card">
+            <p class="chart-title">VENUES</p>
+            <div id="map"></div>
+          </div>
+
+          <div class="charts-card">
+            <p class="chart-title">EVENTS</p>
+            <canvas id="piegraph" style="height: 200; width: 200;"></canvas>
+          </div>
+
+          <div class="charts-card">
+            <p class="chart-title">EARN</p>
+            <canvas id="linegraph" style="height:350px"></canvas>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/chart.min.js"></script>
+    <script src="js/clientbar.js"></script>
+    <script src="js/venuemap.js"></script>
+    <script src="js/eventpie.js"></script>
+    <script src="js/earnline.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/aa5f332820.js" crossorigin="anonymous"></script>
+  </body>
+</html>
